@@ -36,7 +36,7 @@ encoding utf-8
 Sheet 1 1
 Title "USB Condom"
 Date ""
-Rev "0.1"
+Rev "2"
 Comp "csammisrun"
 Comment1 ""
 Comment2 ""
@@ -57,12 +57,12 @@ $EndComp
 $Comp
 L USB_A P1
 U 1 1 58C0BE71
-P 1350 2800
-F 0 "P1" H 1550 2600 50  0000 C CNN
-F 1 "To_Source" H 1300 3000 50  0000 C CNN
-F 2 "Connect:USB_A" V 1300 2700 50  0001 C CNN
-F 3 "" V 1300 2700 50  0000 C CNN
-	1    1350 2800
+P 1350 2850
+F 0 "P1" H 1550 2650 50  0000 C CNN
+F 1 "To_Source" H 1300 3050 50  0000 C CNN
+F 2 "Connect:USB_A" V 1300 2750 50  0001 C CNN
+F 3 "" V 1300 2750 50  0000 C CNN
+	1    1350 2850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -106,7 +106,7 @@ U 1 1 58C0D3FB
 P 2850 2950
 F 0 "C1" H 2875 3050 50  0000 L CNN
 F 1 "100uF" H 2875 2850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 2888 2800 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2888 2800 50  0001 C CNN
 F 3 "" H 2850 2950 50  0000 C CNN
 	1    2850 2950
 	-1   0    0    1   
@@ -139,8 +139,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 2950 5550 2950
 Wire Wire Line
-	5550 3050 5800 3050
-Wire Wire Line
 	2850 3100 2850 3500
 Wire Wire Line
 	2700 3500 4700 3500
@@ -150,11 +148,6 @@ Wire Wire Line
 	2850 2400 2850 2800
 Connection ~ 2850 2400
 Connection ~ 2850 3500
-Wire Wire Line
-	5700 3050 5700 3250
-Wire Wire Line
-	5700 3250 6200 3250
-Connection ~ 5700 3050
 $Comp
 L R R3
 U 1 1 599E2A61
@@ -188,15 +181,11 @@ Text Notes 3700 2700 0    60   ~ 0
 2.7V
 Text Notes 3700 3050 0    60   ~ 0
 2V
-Wire Wire Line
-	1650 2700 1900 2700
-Wire Wire Line
-	1650 3000 1900 3000
 NoConn ~ 1650 2800
 NoConn ~ 1650 2900
-Text Label 1900 2700 0    60   ~ 0
+Text Label 1900 2750 0    60   ~ 0
 GND
-Text Label 1900 3000 0    60   ~ 0
+Text Label 1900 3050 0    60   ~ 0
 VCC
 Wire Wire Line
 	2400 3500 2200 3500
@@ -204,9 +193,18 @@ Text Label 2200 2400 2    60   ~ 0
 GND
 Text Label 2200 3500 2    60   ~ 0
 VCC
+Text Label 1850 2550 0    60   ~ 0
+SHLD
 Wire Wire Line
-	1800 2700 1800 2500
+	5800 3050 5550 3050
+Text Label 5550 3250 2    60   ~ 0
+SHLD
 Wire Wire Line
-	1800 2500 1250 2500
-Connection ~ 1800 2700
+	5550 3250 6200 3250
+Wire Wire Line
+	1250 2550 1850 2550
+Wire Wire Line
+	1650 2750 1900 2750
+Wire Wire Line
+	1900 3050 1650 3050
 $EndSCHEMATC
