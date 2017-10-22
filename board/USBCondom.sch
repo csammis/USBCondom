@@ -35,8 +35,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "USB Condom"
-Date ""
-Rev "2"
+Date "2017-10-22"
+Rev "3"
 Comp "csammisrun"
 Comment1 ""
 Comment2 ""
@@ -121,13 +121,13 @@ Text Label 4700 3100 0    60   ~ 0
 D+
 Text Label 4700 3500 0    60   ~ 0
 VCCphone
-Text Label 5550 2750 2    60   ~ 0
+Text Label 5550 3050 2    60   ~ 0
 VCCphone
 Text Label 5550 2850 2    60   ~ 0
 D-
 Text Label 5550 2950 2    60   ~ 0
 D+
-Text Label 5550 3050 2    60   ~ 0
+Text Label 5550 2750 2    60   ~ 0
 GNDphone
 Wire Wire Line
 	3200 3100 4700 3100
@@ -207,4 +207,6 @@ Wire Wire Line
 	1650 2750 1900 2750
 Wire Wire Line
 	1900 3050 1650 3050
+Text Notes 4950 2600 0    60   ~ 0
+Note: VCC and GND swap is intentional
 $EndSCHEMATC
